@@ -19,3 +19,8 @@ Route::get('/sobre-nos', 'SobreNosController@sobreNos');
 
 Route::get('/contato', 'ContatoController@contato');
 
+Route::get('/contato/{nome}/{numero}/{opcional?}', function(string $nome, int $numero, string $mensagem = 'Mensagem não informada') {
+    echo 'Estamos aqui !' . $nome . ' Numero: ' . $numero;
+    echo '<br>';
+    echo 'parametro opcional: ' . $mensagem;
+});
