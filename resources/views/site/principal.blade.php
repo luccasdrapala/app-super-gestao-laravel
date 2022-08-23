@@ -15,7 +15,7 @@
         </li>
 
         <li>
-            <a href="/sobre-nos">Sobre-Nos</a>
+            <a href="{{route ('site.sobrenos')}}">Sobre-Nos</a>
         </li>
 
         <li>
