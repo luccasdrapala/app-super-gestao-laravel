@@ -37,3 +37,7 @@ Route::get(('/rota2'), function() {
 
 //Route::redirect(('/rota2'), ('/rota1'));
 
+Route::fallback(function() {
+    echo 'pagina não encontrada ';
+});
+
